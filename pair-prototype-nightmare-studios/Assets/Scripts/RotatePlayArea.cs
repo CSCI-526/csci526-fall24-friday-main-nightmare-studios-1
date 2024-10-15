@@ -10,7 +10,6 @@ public class RotatePlayArea : MonoBehaviour
 
     public Rigidbody2D rb;
     public Transform player;
-
     void Update()
     {
          angleBefore = transform.eulerAngles.z;
