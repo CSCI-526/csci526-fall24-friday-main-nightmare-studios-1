@@ -25,7 +25,6 @@ public class TogglePositionLock : MonoBehaviour
     {
         if (collision.gameObject.tag == "Ground")
         {
-            
             FreezePosition();
         }
     }
@@ -40,6 +39,5 @@ public class TogglePositionLock : MonoBehaviour
     {
         rb.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
         rb.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
-        
     }
 }

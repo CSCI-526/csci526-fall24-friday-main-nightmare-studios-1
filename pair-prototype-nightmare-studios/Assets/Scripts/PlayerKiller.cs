@@ -26,8 +26,8 @@ public class PlayerKiller : MonoBehaviour
             Debug.Log(playAreaTransform.localEulerAngles);
             // Reset player position and play area rotation
             transform.localPosition = respawnPosition; // Use localPosition if originally intended
-           playAreaTransform.eulerAngles = playAreaEulerAngles;
- // Use localEulerAngles to match Start()
+            playAreaTransform.eulerAngles = playAreaEulerAngles;
+            // Use localEulerAngles to match Start()
 
             // If using Rigidbody2D and want to reset physics properties
             Rigidbody2D rb = GetComponent<Rigidbody2D>();

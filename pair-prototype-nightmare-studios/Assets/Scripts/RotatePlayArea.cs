@@ -11,13 +11,8 @@ public class RotatePlayArea : MonoBehaviour
     public Rigidbody2D rb;
     public Transform player;
 
-
-
-    
-
     void Update()
     {
-
          angleBefore = transform.eulerAngles.z;
         if (Input.GetKeyDown(KeyCode.F) && !isRotating)
         {
@@ -34,7 +29,6 @@ public class RotatePlayArea : MonoBehaviour
 
     void RotateArea()
     {
-     
         float step = rotationSpeed * Time.deltaTime;
         
         Debug.Log(angleBefore);
@@ -49,7 +43,4 @@ public class RotatePlayArea : MonoBehaviour
           
         }
     }
-
-
-
 }
